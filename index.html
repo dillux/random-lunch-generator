@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Lunch Generator</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="ticket" aria-labelledby="title">
+    <h1 id="title">What's for lunch?</h1>
+    <p class="lede">Can't decide? Let chance pick for you.</p>
+
+    <section class="plate" aria-live="polite">
+      <span class="dish-emoji" id="dishEmoji" role="img" aria-label="Plate">🍽️</span>
+      <p class="dish-name" id="dishName">Press the button</p>
+      <p class="dish-note" id="dishNote">&nbsp;</p>
+    </section>
+
+    <button class="pick" id="pickBtn" type="button">Pick my lunch</button>
+    <p class="hint">Not feeling it? Press again.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
